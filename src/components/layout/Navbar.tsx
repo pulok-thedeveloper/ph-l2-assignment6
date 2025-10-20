@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/popover"
 import { Link } from "react-router";
 import { useGetUserInfoQuery } from "@/redux/features/auth/authApi";
+import { ModeToggle } from "./ModeToggler";
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
@@ -28,8 +29,8 @@ export default function Navbar() {
   const {data} = useGetUserInfoQuery(null)
 
   return (
-    <header className="border-b px-4 md:px-6">
-      <div className="flex container mx-auto h-16 items-center justify-between gap-4">
+    <header className="border-b px-4 md:px-6 sticky top-0 left-0 z-50 bg-background/10 backdrop-blur-2xl">
+      <div className="flex max-w-7xl mx-auto h-16 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu trigger */}
@@ -105,6 +106,7 @@ export default function Navbar() {
         </div>
         {/* Right side */}
         <div className="flex items-center gap-4">
+          <ModeToggle/>
           {
              data?.data?.email ? 
                 <UserMenu user={data?.data}/>

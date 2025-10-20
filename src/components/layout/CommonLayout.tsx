@@ -8,7 +8,7 @@ interface IProps {
 
 const CommonLayout: React.FC<IProps> = ({children}) => {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col relative">
             <Navbar/>
             <div className="grow">
                 {children}

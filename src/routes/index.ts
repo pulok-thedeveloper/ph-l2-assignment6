@@ -15,7 +15,7 @@ import RiderRides from "@/pages/Rider/MyRides";
 import DriverRides from "@/pages/Driver/MyRides";
 import { riderSidebarItems } from "./riderSidebarItems";
 import { driverSidebarItems } from "./driverSidebarItems";
-import Home from "@/pages/Home";
+import Home from "@/pages/home/Home";
 import About from "@/pages/About";
 import Features from "@/pages/Features";
 import Contact from "@/pages/Contact";
