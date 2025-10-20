@@ -4,7 +4,7 @@ const Cta = () => {
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <div className="space-y-8">
                     <h2 className="text-5xl font-bold text-foreground">Ready to start your journey?</h2>
-                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Download the RideFlow app today and experience the future of transportation. Available on iOS and Android.</p>
+                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Download the RideAxis app today and experience the future of transportation. Available on iOS and Android.</p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-3">

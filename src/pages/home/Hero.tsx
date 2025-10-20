@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="text-primary">tap away</span>
           </h1>
           <p className="text-muted-foreground text-lg">
-            Experience seamless transportation with RideFlow. Safe, reliable,
+            Experience seamless transportation with RideAxis. Safe, reliable,
             and affordable rides whenever you need them.
           </p>
 
@@ -55,7 +55,7 @@ export default function Hero() {
           <Card className="w-full shadow-xl overflow-hidden py-0">
             <img
               src={heroImage}
-              alt="RideFlow app preview"
+              alt="RideAxis app preview"
               className="object-cover"
             />
           </Card>
