@@ -12,7 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { useGetUserInfoQuery } from "@/redux/features/auth/authApi";
 import { ModeToggle } from "./ModeToggler";
 
@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <header className="border-b px-4 md:px-6 sticky top-0 left-0 z-50 bg-background/10 backdrop-blur-2xl">
-      <div className="flex max-w-7xl mx-auto h-16 items-center justify-between gap-4">
+      <div className="flex max-w-7xl mx-auto h-20 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu trigger */}
@@ -87,23 +87,24 @@ export default function Navbar() {
             <a href="/" className="text-primary hover:text-primary/90">
               <img src={Logo} alt="logo" className="h-10" />
             </a>
-            {/* Navigation menu */}
-            <NavigationMenu className="max-md:hidden">
-              <NavigationMenuList className="gap-2">
-                {navigationLinks.map((link, index) => (
-                  <NavigationMenuItem key={index}>
-                    <NavigationMenuLink
-                      href={link.href}
-                      className="text-muted-foreground hover:text-primary py-1.5 font-medium"
-                    >
-                      {link.label}
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                ))}
-              </NavigationMenuList>
-            </NavigationMenu>
           </div>
         </div>
+        {/* Navigation menu */}
+        <NavigationMenu className="max-md:hidden">
+          <NavigationMenuList className="gap-2">
+            {navigationLinks.map((link, index) => (
+              <NavigationMenuItem key={index}>
+                <NavigationMenuLink
+                  className="text-muted-foreground text-base hover:text-primary py-1.5 font-medium"
+                >
+                  <NavLink to={link.href}>
+                    {link.label}
+                  </NavLink>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
         {/* Right side */}
         <div className="flex items-center gap-4">
           <ModeToggle/>

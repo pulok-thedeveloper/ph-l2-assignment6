@@ -120,5 +120,10 @@
 }
 
 #sidebar a.active {
-  background: oklch(0.606 0.25 292.717);
+  background: var(--primary);
+}
+
+nav a:has(> a.active) {
+  background: var(--primary);
+  color: #fff;
 }
