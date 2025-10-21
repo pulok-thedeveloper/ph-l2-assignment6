@@ -146,7 +146,7 @@ export default function Footer() {
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
-                    1on1 Coaching{" "}
+                    RideAxis Go{" "}
                   </a>
                 </li>
 
@@ -156,7 +156,7 @@ export default function Footer() {
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
-                    Company Review{" "}
+                    RideAxis Plus{" "}
                   </a>
                 </li>
 
@@ -166,7 +166,7 @@ export default function Footer() {
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
-                    Accounts Review{" "}
+                    RideAxis Share{" "}
                   </a>
                 </li>
 
@@ -176,17 +176,7 @@ export default function Footer() {
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
-                    HR Consulting{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-foreground/90 transition hover:text-foreground/60"
-                  >
-                    {" "}
-                    SEO Optimisation{" "}
+                    RideAxis Delivery{" "}
                   </a>
                 </li>
               </ul>
@@ -198,7 +188,7 @@ export default function Footer() {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
@@ -208,7 +198,7 @@ export default function Footer() {
 
                 <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
@@ -218,7 +208,7 @@ export default function Footer() {
 
                 <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
@@ -234,7 +224,7 @@ export default function Footer() {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/contact"
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
@@ -244,7 +234,7 @@ export default function Footer() {
 
                 <li>
                   <a
-                    href="#"
+                    href="/faq"
                     className="text-foreground/90 transition hover:text-foreground/60"
                   >
                     {" "}
@@ -312,7 +302,7 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-muted-foreground">
-          &copy; 2022. Company Name. All rights reserved.
+          &copy; 2025. RideAxis. All rights reserved.
         </p>
       </div>
     </footer>
