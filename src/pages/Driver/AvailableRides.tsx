@@ -60,7 +60,7 @@ const AvailableRides = () => {
   const handleToggleAvailability = async () => {
     if (!driverId) return;
     try {
-      await setDriverAvailability({ driverId, isOnline: !isOnline }).unwrap();
+      await setDriverAvailability({driverId, body: { isOnline: !isOnline }}).unwrap();
       toast.success(`You are now ${!isOnline ? "Online" : "Offline"}`);
       await refetchUser();
     } catch (error: any) {

@@ -11,8 +11,8 @@ export const driverApi = baseApi.injectEndpoints({
       }),
     }),
     setDriverAvailability: builder.mutation({
-      query: (body) => ({
-        url: `/drivers/availability`,
+      query: ({body, driverId}) => ({
+        url: `/drivers/availability/${driverId}`,
         method: "PATCH",
         data: body,
       }),
