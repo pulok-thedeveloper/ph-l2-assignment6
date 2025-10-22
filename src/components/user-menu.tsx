@@ -64,12 +64,6 @@ export default function UserMenu({user}:{user:IUser}) {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <Link className="flex items-center gap-2 w-full" to="/profile">            
-              <User size={16} className="opacity-60" aria-hidden="true" />
-              <span>Profile</span>
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
             <Link className="flex items-center gap-2 w-full" to={`/${user.role.toLocaleLowerCase()}`}>
               <LayoutDashboard size={16} className="opacity-60" aria-hidden="true" />
               <span>Dashboard</span>
