@@ -1,7 +1,6 @@
 import {
   LayoutDashboard,
-  LogOutIcon,
-  User,
+  LogOutIcon
 } from "lucide-react"
 
 import {
