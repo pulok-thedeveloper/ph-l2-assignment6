@@ -62,7 +62,8 @@ export const RegisterForm = ({
       const result = await register(userInfo).unwrap()
       console.log(result)
       toast.success("User Created Successfully!")
-      navigate("/verify", {state: data.email})
+      navigate("/")
+      // navigate("/verify", {state: data.email})
     } catch (error:any) {
       toast.error(`${error.data.message}, ${error.data?.errorSources?.[0]?.message}`)
     }
