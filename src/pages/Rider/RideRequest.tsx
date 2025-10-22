@@ -41,7 +41,7 @@ const RideRequest = () => {
         try {
             const res = await addTour(rideData).unwrap()
             if(res?.success){
-                toast.success("Tour Added Successfully!")
+                toast.success("Ride Request Added Successfully!")
                 form.reset()
             }
         } catch (error: any) {
