@@ -52,7 +52,7 @@ Designed for scalability, clarity, and real-world usability — built using **Ne
 | **Frontend** | [ReactJS 19](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), [ShadCN/UI](https://ui.shadcn.com/) |
 | **State Management** | [Redux Toolkit](https://redux-toolkit.js.org/), RTK Query |
 | **Backend** | [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/) |
-| **Authentication** | JWT, NextAuth (optional) |
+| **Authentication** | JWT |
 | **Deployment** | [Vercel](https://vercel.com/) (Frontend, Backend)|
 
 ---
@@ -86,4 +86,4 @@ VITE_BASE_URL=http://localhost:5000/api/v1
 bun run dev
 ```
 
-App will be available at 👉 http://localhost:3000
+App will be available at 👉 http://localhost:5173
