@@ -192,7 +192,7 @@ export const RegisterForm = ({
               fill="currentColor"
             />
           </svg>
-          Login with Google
+          Login with Google (Only Riders)
         </Button>
       </div>
       <div className="text-center text-sm">
